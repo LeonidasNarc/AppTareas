@@ -10,6 +10,8 @@ app.use(express.json())
 app.use(express.urlencoded({extended:false}))
 
 
+
+
 // app.get('/api/tareas', (req, res)=>{
 //     //res.send('obtener tareas')
 //     //res.json({message: 'obtener tareas'})
@@ -22,5 +24,6 @@ app.use('/api/tareas', require('./routes/tareaRoutes'))
 
 app.use(errorHandler)
 
+//la app tiene que escuchar un puerto 
 app.listen(port,()=> console.log(`el servidor inicio en el puerto ${port}`) )
 

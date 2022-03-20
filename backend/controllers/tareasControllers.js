@@ -1,5 +1,7 @@
 const asyncHandler=require('express-async-handler')
 
+
+//funcion para obtener los controladores (tareas)
 const getTareas=asyncHandler(async(req, res)=>{
     res.status(200).json({message: 'obtener tareas'})
    
